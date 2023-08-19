@@ -24,16 +24,25 @@ function Navbar() {
                 <li className="p-4">PRESS</li>
                 <li className="p-4">CONTACT</li>
             </ul>
-            <div onClick={handleNav} className="block md:hidden">
-                {!nav ? (
-                    <AiOutlineClose className="fixed right-4" size={30} />
-                ) : (
-                    <RxHamburgerMenu className="fixed right-4" size={30} />
-                )}
+            <div className="w-[40%] h-[20%] bg-white">
+                <div onClick={handleNav} className="block md:hidden">
+                    {!nav ? (
+                        <AiOutlineClose
+                            className="fixed right-4 top-7"
+                            size={30}
+                        />
+                    ) : (
+                        <RxHamburgerMenu
+                            className="fixed right-4 top-7"
+                            size={30}
+                        />
+                    )}
+                </div>
+                <div className="md:hidden">
+                    <img className="w-16 fixed left-5" src={logo} />
+                </div>
             </div>
-            <div className="md:hidden">
-                <img className="w-16 fixed left-5" src={logo} />
-            </div>
+
             <div
                 className={
                     !nav
