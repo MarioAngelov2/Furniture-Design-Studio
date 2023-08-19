@@ -11,7 +11,7 @@ function Navbar() {
     };
 
     return (
-        <div className="flex justify-between items-center md:flex-col mt-4 px-4">
+        <div className="flex justify-between max-w-[1440px] mx-auto items-center md:flex-col mt-4 px-4">
             <ul className="hidden md:flex gap-5 items-center text-sm ">
                 <li className="p-4">SERVICES</li>
                 <li className="p-4">PORTFOLIO</li>
@@ -37,11 +37,11 @@ function Navbar() {
             <div
                 className={
                     !nav
-                        ? "fixed left-2 top-0 w-[60%] h-full ease-in-out duration-500"
+                        ? "fixed bg-white left-2 top-0 w-[40%] h-full ease-in-out duration-500"
                         : "fixed left-[-100%]"
                 }
             >
-                <ul className="text-sm my-2 py-24">
+                <ul className="text-sm my-2">
                     <li className="p-4">SERVICES</li>
                     <li className="p-4">PORTFOLIO</li>
                     <li className="p-4">ABOUT</li>
