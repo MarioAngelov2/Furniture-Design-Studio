@@ -4,9 +4,9 @@ import project4 from "../assets/project4.jpeg";
 function Blog() {
     return (
         <>
-            <div className="md:flex justify-between items-center px-12 mt-20 mb-8">
-                <h1 className="text-3xl">Check out our blog</h1>
-                <span className="underline underline-offset-8 text-md tracking-widest">
+            <div className="flex flex-col md:flex md:flex-row max-w-[1440px] mx-auto justify-between items-center px-12 mt-20 mb-8">
+                <h1 className="text-3xl mb-3 md:text-3xl">Check out our blog</h1>
+                <span className="underline underline-offset-8 text-sm md:text-md tracking-widest">
                     VIEW ALL
                 </span>
             </div>
@@ -30,7 +30,7 @@ function Blog() {
                                 that handling warehouse operations are a massive
                                 task…
                             </p>
-                            <span className="flex mt-6 underline underline-offset-8 tracking-widest">
+                            <span className="flex mb-10 mt-6 underline underline-offset-8 tracking-widest">
                                 READ MORE
                             </span>
                         </div>
@@ -55,7 +55,7 @@ function Blog() {
                                 that handling warehouse operations are a massive
                                 task…
                             </p>
-                            <span className="flex mt-6 underline underline-offset-8 tracking-widest">
+                            <span className="flex mb-10 mt-6 underline underline-offset-8 tracking-widest">
                                 READ MORE
                             </span>
                         </div>
