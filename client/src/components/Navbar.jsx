@@ -4,7 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import logo from "../assets/logo_dark.png";
 
 function Navbar() {
-    const [nav, setNav] = useState(false);
+    const [nav, setNav] = useState(true);
 
     const handleNav = () => {
         setNav(!nav);
@@ -25,7 +25,7 @@ function Navbar() {
                 <li className="p-4">CONTACT</li>
             </ul>
             <div className="w-[40%] h-[20%] bg-white">
-                <div onClick={handleNav} className="block md:hidden">
+                <div onClick={handleNav} className="block md:hidden"> 
                     {!nav ? (
                         <AiOutlineClose
                             className="fixed right-4 top-7"
@@ -47,7 +47,7 @@ function Navbar() {
                 className={
                     !nav
                         ? "fixed bg-white left-2 top-0 w-[40%] h-full ease-in-out duration-500"
-                        : "fixed left-[-100%]"
+                        : "fixed ease-in-out h-full duration-500 left-[-100%]"
                 }
             >
                 <ul className="text-sm my-2">
