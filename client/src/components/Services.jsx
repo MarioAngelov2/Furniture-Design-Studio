@@ -12,7 +12,7 @@ function Services() {
                         A great design tells a story. Discover оur story and
                         design аpproach to creating flawless interiors.
                     </p>
-                    <p className="underline underline-offset-4 mt-6">
+                    <p className="underline underline-offset-8 mt-6 tracking-widest">
                         ABOUT US
                     </p>
                 </div>
@@ -44,7 +44,7 @@ function Services() {
                         its meaning is at the heart of our philosophy and design
                         approach.
                     </p>
-                    <p className="underline underline-offset-4 mt-6">
+                    <p className="underline underline-offset-8 mt-6 tracking-widest">
                         VIEW SERVICES
                     </p>
                 </div>

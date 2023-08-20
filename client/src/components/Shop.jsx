@@ -8,7 +8,7 @@ function Shop() {
         <div className="md:grid grid-cols-1 max-w-[1440px] mx-auto text-center mt-20">
             <div className="md:flex justify-between items-center px-12 mb-8">
                 <h1 className="text-3xl">Shop our favorites</h1>
-                <span className="underline underline-offset-8 text-sm">
+                <span className="underline underline-offset-8 text-md tracking-widest">
                     SHOP ALL
                 </span>
             </div>
@@ -20,7 +20,7 @@ function Shop() {
                         </div>
                         <div className="flex mt-5 justify-between items-center">
                             <h2>VINTAGE CHAIR</h2>
-                            <span className="underline underline-offset-8">
+                            <span className="underline underline-offset-8 tracking-widest">
                                 SHOP
                             </span>
                         </div>
@@ -31,7 +31,7 @@ function Shop() {
                         </div>
                         <div className="flex mt-5 justify-between items-center">
                             <h2>VINTAGE CHAIR</h2>
-                            <span className="underline underline-offset-8">
+                            <span className="underline underline-offset-8 tracking-widest">
                                 SHOP
                             </span>
                         </div>
@@ -42,7 +42,7 @@ function Shop() {
                         </div>
                         <div className="flex mt-5 justify-between items-center">
                             <h2>VINTAGE CHAIR</h2>
-                            <span className="underline underline-offset-8">
+                            <span className="underline underline-offset-8 tracking-widest">
                                 SHOP
                             </span>
                         </div>
