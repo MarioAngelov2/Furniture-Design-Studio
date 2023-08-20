@@ -5,7 +5,7 @@ import item3 from "../assets/item3.jpeg";
 
 function Shop() {
     return (
-        <div className="md:grid grid-cols-1 max-w-[1440px] mx-auto text-center mt-16 mb-5">
+        <div className="md:grid grid-cols-1 max-w-[1440px] mx-auto text-center mt-20">
             <div className="md:flex justify-between items-center px-12 mb-8">
                 <h1 className="text-3xl">Shop our favorites</h1>
                 <span className="underline underline-offset-8 text-sm">
