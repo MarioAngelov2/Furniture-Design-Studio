@@ -1,4 +1,5 @@
 import './App.css'
+import Blog from './components/Blog'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
@@ -14,6 +15,7 @@ function App() {
       <Projects />
       <Services />
       <Shop />
+      <Blog />
     </div>
   )
 }
