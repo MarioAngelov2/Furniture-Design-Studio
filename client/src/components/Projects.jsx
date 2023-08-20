@@ -4,7 +4,7 @@ import project2 from "../assets/project2.jpeg";
 
 function Projects() {
     return (
-        <div className="md:grid grid-cols-2 max-w-[1440px] mx-auto text-center mt-10 mb-5">
+        <div className="md:grid grid-cols-2 max-w-[1440px] mx-auto text-center mt-10">
             <div className="flex justify-center">
                 <div className="px-12">
                     <div className="flex mb-8">
