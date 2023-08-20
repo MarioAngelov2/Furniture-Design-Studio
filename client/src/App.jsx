@@ -1,6 +1,7 @@
 import './App.css'
 import Blog from './components/Blog'
 import CallToAction from './components/CallToAction'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
@@ -18,6 +19,7 @@ function App() {
       <Shop />
       <Blog />
       <CallToAction />
+      <Footer />
     </div>
   )
 }
