@@ -7,7 +7,7 @@ function Shop() {
     return (
         <div className="md:grid grid-cols-1 max-w-[1440px] mx-auto text-center mt-20">
             <div className="md:flex justify-between items-center px-12 mb-8">
-                <h1 className="text-3xl">Shop our favorites</h1>
+                <h1 className="text-3xl mb-3 md:text-3xl">Shop our favorites</h1>
                 <span className="underline underline-offset-8 text-md tracking-widest">
                     SHOP ALL
                 </span>
