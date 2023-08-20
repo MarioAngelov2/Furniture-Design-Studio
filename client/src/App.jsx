@@ -1,5 +1,6 @@
 import './App.css'
 import Blog from './components/Blog'
+import CallToAction from './components/CallToAction'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
@@ -16,6 +17,7 @@ function App() {
       <Services />
       <Shop />
       <Blog />
+      <CallToAction />
     </div>
   )
 }
