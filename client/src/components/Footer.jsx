@@ -62,11 +62,12 @@ function Footer() {
                     <h3 className="mb-3 text-lg tracking-widest">NEWSLETTER</h3>
                     <label className="text-sm font-thin">Email address</label>
                     <input
-                        className="border w-full h-[100%] border-black mt-1"
+                        className="border w-[130%] h-[130%] border-black mt-2"
                         type="email"
+                        placeholder="george@gmail.com"
                     />
                     <div className="flex justify-end">
-                        <button className="text-sm md:text-md  mt-5 underline underline-offset-8 tracking-widest">
+                        <button className="text-sm md:text-md mt-8 underline underline-offset-8 tracking-widest">
                             SUBSCRIBE
                         </button>
                     </div>
