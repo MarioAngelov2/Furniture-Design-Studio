@@ -19,6 +19,7 @@ export const navbarLinks = [
         isLogo: true,
         imageSrc: logo,
         altText: "Logo",
+        target: "header",
     },
     {
         title: "SHOP",

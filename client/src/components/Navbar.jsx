@@ -25,25 +25,40 @@ function Navbar() {
                     <p className="text-xs tracking-widest">BG/EN</p>
                 </div>
                 <ul className="hidden md:flex gap-5 items-center text-sm">
-                    {navbarLinks.map((link) => (
-                        <li key={link.title} className="p-4 cursor-pointer font-barlow tracking-widest">
-                            {link.isLogo ? (
-                                <div key={link.title} className="mx-auto">
-                                    <img className="w-16" src={link.imageSrc} />
-                                </div>
-                            ) : (
-                                <Link
-                                    to={link.target}
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-100}
-                                    duration={500}
-                                >
-                                    {link.title}
-                                </Link>
-                            )}
-                        </li>
-                    ))}
+                    {navbarLinks.length > 0 &&
+                        navbarLinks.map((link) => (
+                            <li
+                                key={link.title}
+                                className="p-4 cursor-pointer font-barlow tracking-widest"
+                            >
+                                {link.isLogo ? (
+                                    <div key={link.title} className="mx-auto">
+                                        <Link
+                                            to={link.target}
+                                            spy={true}
+                                            smooth={true}
+                                            offset={-100}
+                                            duration={500}
+                                        >
+                                            <img
+                                                className="w-16"
+                                                src={link.imageSrc}
+                                            />
+                                        </Link>
+                                    </div>
+                                ) : (
+                                    <Link
+                                        to={link.target}
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-100}
+                                        duration={500}
+                                    >
+                                        {link.title}
+                                    </Link>
+                                )}
+                            </li>
+                        ))}
                 </ul>
                 <div className="w-[40%] h-[20%] bg-white">
                     <div onClick={handleNav} className="block md:hidden">
