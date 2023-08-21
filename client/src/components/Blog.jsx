@@ -47,9 +47,9 @@ function Blog() {
                             <p className="text-start text-md mt-2">
                                 {post.article}
                             </p>
-                            <span className="flex mb-10 mt-6 underline underline-offset-8 tracking-widest">
+                            <button className="flex md:w-[20%] mb-10 mt-6 underline underline-offset-8 tracking-widest">
                                 READ MORE
-                            </span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -65,9 +65,9 @@ function Blog() {
                 <h1 className="text-3xl mb-3 md:text-3xl">
                     Check out our blog
                 </h1>
-                <span className="underline underline-offset-8 text-sm md:text-md tracking-widest">
+                <button className="underline underline-offset-8 text-sm md:text-md tracking-widest">
                     VIEW ALL
-                </span>
+                </button>
             </div>
             <div className="md:grid grid-cols-2 max-w-[1440px] mx-auto text-center">
                 {displayPosts}
