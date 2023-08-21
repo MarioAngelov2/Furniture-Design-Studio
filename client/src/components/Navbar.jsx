@@ -24,16 +24,16 @@ function Navbar() {
                 <div className="absolute right-3 top-3 md:right-10 md:top-2 flex items-start gap-2">
                     <p className="text-xs tracking-widest">BG/EN</p>
                 </div>
-                <ul className="hidden md:flex gap-5 items-center text-sm ">
+                <ul className="hidden md:flex gap-5 items-center text-sm">
                     {navbarLinks.map((link) => (
-                        <li className="p-4 cursor-pointer">
+                        <li key={link.title} className="p-4 cursor-pointer font-barlow tracking-widest">
                             {link.isLogo ? (
-                                <div className="mx-auto">
+                                <div key={link.title} className="mx-auto">
                                     <img className="w-16" src={link.imageSrc} />
                                 </div>
                             ) : (
                                 <Link
-                                    to={link.targe}
+                                    to={link.target}
                                     spy={true}
                                     smooth={true}
                                     offset={-100}
@@ -73,7 +73,7 @@ function Navbar() {
                 >
                     <ul className="text-sm my-2 cursor-pointer">
                         {navbarLinks.map((link) => (
-                            <li className="p-4">
+                            <li key={link.title} className="p-4">
                                 <Link
                                     to={link.target}
                                     spy={true}
