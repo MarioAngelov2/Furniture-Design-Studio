@@ -19,7 +19,7 @@ function Shop() {
         loadProducts();
     }, [])
 
-    const listProducts = products.map((product) => (
+    const listProducts = products.length > 0 && products.map((product) => (
         <div key={product._id}>
             <div className="border border-y-8 border-x-8 border-[#F6F4F1]">
                 <img src={product.images} alt="" />
