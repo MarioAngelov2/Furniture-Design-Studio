@@ -4,7 +4,7 @@ import project3 from "../assets/project3.jpeg";
 
 function Services() {
     return (
-        <div className="md:grid grid-cols-2 max-w-[1440px] mx-auto mt-20">
+        <div id="services" className="md:grid grid-cols-2 max-w-[1440px] mx-auto mt-20">
             <div className="bg-[#F6F4F1] h-[591px] flex">
                 <div className="flex flex-col justify-center align-middle px-20">
                     <h1 className="text-3xl mb-6">Elegant flow</h1>

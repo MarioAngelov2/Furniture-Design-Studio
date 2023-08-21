@@ -5,7 +5,7 @@ import signature from "../assets/signature.png";
 function Header() {
     return (
         <div className="flex flex-col max-w-[1440px] mx-auto items-center justify-center px-6 md:px-10 py-8">
-            <div className="mb-4 md:mb-0">
+            <div className="mb-4 mt-10 md:mt-24 md:mb-0">
                 <img
                     src={heroImage}
                     alt=""

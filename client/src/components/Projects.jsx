@@ -5,7 +5,7 @@ import project2 from "../assets/project2.jpeg";
 function Projects() {
     return (
         <>
-            <div className="md:flex justify-between max-w-[1440px] mx-auto items-center px-12 mt-20 md:mb-8">
+            <div id="portfolio" className="md:flex justify-between max-w-[1440px] mx-auto items-center px-12 mt-20 md:mb-8">
                 <h1 className="mb-2 text-3xl md:text-3xl">Latest Projects</h1>
                 <p className="underline underline-offset-8 text-xs md:text-base tracking-widest">
                     SEE PORTFOLIO
