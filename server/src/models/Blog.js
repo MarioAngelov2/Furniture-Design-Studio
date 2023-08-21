@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const BlogSchema = new mongoose.Schema({
-    image: String,
+    images: [String],
     title: String,
     article: String,
 });
