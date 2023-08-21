@@ -31,9 +31,9 @@ function Projects() {
                         <h3 className="text-lg md:text-start md:text-xl">
                             {project.title}
                         </h3>
-                        <p className="text-xs md:text-md md:text-base underline underline-offset-8 tracking-widest">
+                        <button className="text-xs md:text-md md:text-base underline underline-offset-8 tracking-widest">
                             VIEW DETAILS
-                        </p>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -46,9 +46,9 @@ function Projects() {
                 className="md:flex justify-between max-w-[1440px] mx-auto items-center px-12 mt-20 md:mb-8"
             >
                 <h1 className="mb-2 text-3xl md:text-3xl">Latest Projects</h1>
-                <p className="underline underline-offset-8 text-xs md:text-base tracking-widest">
+                <button className="underline underline-offset-8 text-xs md:text-base tracking-widest">
                     SEE PORTFOLIO
-                </p>
+                </button>
             </div>
             <div className="md:grid grid-cols-2 max-w-[1440px] mx-auto text-center mt-10">
                 {displayProjects}
