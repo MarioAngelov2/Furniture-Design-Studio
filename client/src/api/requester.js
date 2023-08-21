@@ -23,3 +23,16 @@ export async function getProjects() {
         console.log(error);
     }
 }
+
+
+export async function getBlogPosts() {
+    try {
+        const response = await fetch(`${URL}/posts`);
+
+        if (response.ok) {
+            return response.json();
+        }
+    } catch (error) {
+        console.log(error)
+    }
+}
