@@ -16,7 +16,7 @@ function Navbar() {
 
     return (
         <>
-            <div className="flex fixed right-0 left-0 bg-white h-[90px] md:bg-white md:h-[100px] py-4 justify-between max-w-[1440px] mx-auto items-center md:flex-col px-4">
+            <div className="flex fixed right-0 left-0 bg-white h-[90px] md:bg-white md:h-[100px] py-1 justify-between max-w-[1440px] mx-auto items-center md:flex-col px-4">
                 <div className="absolute hidden md:left-10 md:top-2 md:flex items-start gap-2">
                     <BiLogoFacebook size={18} />
                     <BiLogoInstagram size={18} />
@@ -41,7 +41,7 @@ function Navbar() {
                                             duration={500}
                                         >
                                             <img
-                                                className="w-16"
+                                                className="w-20"
                                                 src={link.imageSrc}
                                             />
                                         </Link>
