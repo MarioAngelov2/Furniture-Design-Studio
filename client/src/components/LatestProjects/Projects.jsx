@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import * as requester from "../api/requester";
+import * as requester from "../../api/requester";
 
 function Projects() {
     const [projects, setProjects] = useState([]);

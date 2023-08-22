@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import * as requester from "../api/requester";
-import project4 from "../assets/project4.jpeg";
+import * as requester from "../../api/requester";
 
 function Blog() {
     const [blogPost, setBlogPost] = useState([]);

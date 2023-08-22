@@ -1,6 +1,6 @@
 import React from "react";
-import project2 from "../assets/project2.jpeg";
-import project3 from "../assets/project3.jpeg";
+import project2 from "../../assets/project2.jpeg";
+import project3 from "../../assets/project3.jpeg";
 
 function Services() {
     return (

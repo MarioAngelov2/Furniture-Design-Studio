@@ -3,9 +3,9 @@ import { Link } from "react-scroll";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import { BiLogoFacebook, BiLogoInstagram } from "react-icons/bi";
-import { navbarLinks } from "../utils/navbarLinks";
+import { navbarLinks } from "../../utils/navbarLinks";
 
-import logo from "../assets/logo_dark.png";
+import logo from "../../assets/logo_dark.png";
 
 function Navbar() {
     const [nav, setNav] = useState(true);

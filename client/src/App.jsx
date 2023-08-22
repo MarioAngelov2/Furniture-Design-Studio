@@ -1,15 +1,15 @@
 import { useRef } from "react";
 import "./App.css";
-import Blog from "./components/Blog";
-import CallToAction from "./components/CallToAction";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Services from "./components/Services";
-import Shop from "./components/Shop";
+import Blog from "./components/Blog/Blog";
+import CallToAction from "./components/About/CallToAction";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Hero/Header";
+import Navbar from "./components/Navbar/Navbar";
+import Projects from "./components/LatestProjects/Projects";
+import Services from "./components/Offerings/Services";
+import Shop from "./components/Shop/Shop";
 import { ErrorBoundary } from "react-error-boundary";
-import { ErrorFallBack } from "./components/errors/ErrorBoundaryComponent";
+import { ErrorFallBack } from "./components/Errors/ErrorBoundaryComponent";
 
 function App() {
     return (

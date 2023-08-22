@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { pagesLink, usefulLinks, } from "../utils/footerLinks";
-import logo from "../assets/logo_dark.png";
+import { pagesLink, usefulLinks, } from "../../utils/footerLinks";
+import logo from "../../assets/logo_dark.png";
 import { AiOutlineMail } from "react-icons/ai";
 import { LiaPhoneSolid } from "react-icons/lia";
 import {
