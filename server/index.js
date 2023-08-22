@@ -12,4 +12,11 @@ mongoose.connect(process.env.MONGO_CONNECTION_STRING);
 
 app.use("/", router);
 
+app.use((err, req, res, next) => {
+    console.log(err);
+    res.status(500).json({
+        err: "An error occurred while processing your request.",
+    });
+});
+
 app.listen(4002, () => console.log("Server is listening on port 4002..."));
