@@ -6,7 +6,14 @@ const router = require("./src/routes/routes");
 
 const app = express();
 
-app.use(cors());
+app.use(
+    cors({
+        origin: [
+            "https://main--exquisite-choux-2a199d.netlify.app",
+            "https://64e4d14a55595f1d10ece6d1--unique-pegasus-5a89b8.netlify.app",
+        ],
+    })
+);
 
 mongoose.connect(process.env.MONGO_CONNECTION_STRING);
 
