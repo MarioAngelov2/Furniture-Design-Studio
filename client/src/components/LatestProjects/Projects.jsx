@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import * as requester from "../../api/requester";
+import ListProjects from "./ListProjects";
 
 function Projects() {
     const [projects, setProjects] = useState([]);
@@ -17,28 +18,6 @@ function Projects() {
         loadProjects();
     }, []);
 
-    const displayProjects =
-        projects.length > 0 &&
-        projects.map((project) => (
-            <div key={project._id} className="flex justify-center">
-                <div className="px-12">
-                    <img
-                        className="aspect-square object-cover w-full md:h-[701px]"
-                        src={project.images}
-                        alt=""
-                    />
-                    <div className="flex flex-col items-start gap-1 mb-10 mt-2 md:flex md:flex-row align-middle justify-between md:text-center md:mt-4">
-                        <h3 className="text-lg md:text-start md:text-xl">
-                            {project.title}
-                        </h3>
-                        <button className="text-xs md:text-md md:text-base underline underline-offset-8 tracking-widest">
-                            VIEW DETAILS
-                        </button>
-                    </div>
-                </div>
-            </div>
-        ));
-
     return (
         <>
             <div
@@ -51,7 +30,7 @@ function Projects() {
                 </button>
             </div>
             <div className="md:grid grid-cols-2 max-w-[1440px] mx-auto text-center mt-10">
-                {displayProjects}
+                <ListProjects projects={projects}/>
             </div>
         </>
     );
