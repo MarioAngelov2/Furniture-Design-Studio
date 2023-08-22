@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-scroll";
+import { pagesLink, usefulLinks, } from "../utils/footerLinks";
 import logo from "../assets/logo_dark.png";
 import { AiOutlineMail } from "react-icons/ai";
 import { LiaPhoneSolid } from "react-icons/lia";
@@ -10,7 +12,7 @@ import {
 
 function Footer() {
     return (
-        <div className="max-w-[1440px] mx-auto mt-28">
+        <div id="contact" className="max-w-[1440px] mx-auto mt-28">
             <div className="grid grid-cols-1 place-items-center md:grid md:grid-cols-3 md:place-items-start lg:grid-cols-5 px-12 mb-4">
                 <div className="flex flex-col items-center gap-4 md:flex md:flex-col md:mt-10 md:items-start">
                     <img className="w-[130px] h-[117px]" src={logo} alt="" />
@@ -23,11 +25,19 @@ function Footer() {
                 <div className="flex flex-col items-center mt-10 md:mb-5 md:grid md:place-items-start">
                     <h3 className="mb-3 text-lg tracking-widest">PAGES</h3>
                     <ul className="text-sm font-thin space-y-2">
-                        <li>Services</li>
-                        <li>Portfolio</li>
-                        <li>About</li>
-                        <li>Shop</li>
-                        <li>Contact</li>
+                        {pagesLink.map((link) => (
+                            <li key={link._id} className="cursor-pointer">
+                                <Link
+                                    to={link.target}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-100}
+                                    duration={500}
+                                >
+                                    {link.title}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div className="flex flex-col items-center mt-10 md:mb-5 md:grid md:place-items-start">
@@ -35,10 +45,11 @@ function Footer() {
                         USEFUL LINKS
                     </h3>
                     <ul className="text-sm font-thin space-y-2">
-                        <li>Privacy policy</li>
-                        <li>Cookie policy</li>
-                        <li>Press</li>
-                        <li>Journal</li>
+                        {usefulLinks.map((link) => (
+                            <li key={link._id}>
+                                <a href=''>{link.title}</a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div className="flex flex-col items-center mt-10 md:mb-5 md:grid md:place-items-start">
@@ -62,12 +73,12 @@ function Footer() {
                     <h3 className="mb-3 text-lg tracking-widest">NEWSLETTER</h3>
                     <label className="text-sm font-thin">Email address</label>
                     <input
-                        className="border w-[130%] h-[130%] border-black mt-2"
+                        className="border w-[100%] h-[40px] md:h-[35px] border-black mt-2 px-3"
                         type="email"
                         placeholder="george@gmail.com"
                     />
                     <div className="flex justify-end">
-                        <button className="text-sm md:text-md mt-8 underline underline-offset-8 tracking-widest">
+                        <button className="md:ml-24 text-sm md:text-md mt-8 underline underline-offset-8 tracking-widest">
                             SUBSCRIBE
                         </button>
                     </div>
