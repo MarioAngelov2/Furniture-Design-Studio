@@ -13,10 +13,10 @@ function ListProjects({ projects }) {
                                 alt=""
                             />
                             <div className="flex flex-col items-start gap-1 mb-10 mt-2 md:flex md:flex-row align-middle justify-between md:text-center md:mt-4">
-                                <h3 className="text-lg md:text-start md:text-xl">
+                                <h3 className="text-lg md:text-start md:text-2xl font-playfair">
                                     {project.title}
                                 </h3>
-                                <button className="text-xs md:text-md md:text-base underline underline-offset-8 tracking-widest">
+                                <button className="text-xs md:text-md md:text-base underline underline-offset-8 tracking-widest font-barlow">
                                     VIEW DETAILS
                                 </button>
                             </div>

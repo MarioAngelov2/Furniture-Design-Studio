@@ -22,7 +22,7 @@ function Navbar() {
                     <BiLogoInstagram size={18} />
                 </div>
                 <div className="absolute right-3 top-3 md:right-10 md:top-2 flex items-start gap-2">
-                    <p className="text-xs tracking-widest">BG/EN</p>
+                    <p className="text-xs tracking-widest font-barlow">BG/EN</p>
                 </div>
                 <ul className="hidden md:flex gap-5 items-center text-sm">
                     {navbarLinks.length > 0 &&
@@ -88,7 +88,7 @@ function Navbar() {
                 >
                     <ul className="text-sm my-2 cursor-pointer">
                         {navbarLinks.map((link) => (
-                            <li key={link.title} className="p-4">
+                            <li key={link.title} className="p-4 font-barlow">
                                 <Link
                                     to={link.target}
                                     spy={true}

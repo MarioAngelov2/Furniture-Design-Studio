@@ -1,4 +1,3 @@
-import "./App.css";
 import Blog from "./components/Blog/Blog";
 import CallToAction from "./components/About/CallToAction";
 import Footer from "./components/Footer/Footer";

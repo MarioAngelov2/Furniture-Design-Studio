@@ -7,12 +7,12 @@ function Services() {
         <div id="services" className="md:grid grid-cols-2 max-w-[1440px] mx-auto mt-20">
             <div className="bg-[#F6F4F1] h-[591px] flex">
                 <div className="flex flex-col justify-center align-middle px-20">
-                    <h1 className="text-3xl mb-6">Elegant flow</h1>
-                    <p>
+                    <h1 className="text-4xl mb-6 font-playfair">Elegant flow</h1>
+                    <p className="font-barlow">
                         A great design tells a story. Discover оur story and
                         design аpproach to creating flawless interiors.
                     </p>
-                    <button className="flex underline underline-offset-8 mt-6 tracking-widest">
+                    <button className="flex underline underline-offset-8 mt-6 tracking-widest font-barlow">
                         ABOUT US
                     </button>
                 </div>
@@ -38,13 +38,13 @@ function Services() {
             </div>
             <div className="bg-[#F6F4F1] h-[591px] md:h-auto flex">
                 <div className="flex flex-col justify-center align-middle px-20">
-                    <h1 className="text-3xl mb-6">Redefining Luxury</h1>
-                    <p>
+                    <h1 className="text-4xl mb-6 font-playfair">Redefining Luxury</h1>
+                    <p className="font-barlow">
                         Luxury in interior design has evolved, and redefining
                         its meaning is at the heart of our philosophy and design
                         approach.
                     </p>
-                    <button className="flex underline underline-offset-8 mt-6 tracking-widest">
+                    <button className="flex underline underline-offset-8 mt-6 tracking-widest font-barlow">
                         VIEW SERVICES
                     </button>
                 </div>

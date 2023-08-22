@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { pagesLink, usefulLinks, } from "../../utils/footerLinks";
+import { pagesLink, usefulLinks } from "../../utils/footerLinks";
 import logo from "../../assets/logo_dark.png";
 import { AiOutlineMail } from "react-icons/ai";
 import { LiaPhoneSolid } from "react-icons/lia";
@@ -23,10 +23,15 @@ function Footer() {
                     </div>
                 </div>
                 <div className="flex flex-col items-center mt-10 md:mb-5 md:grid md:place-items-start">
-                    <h3 className="mb-3 text-lg tracking-widest">PAGES</h3>
+                    <h3 className="mb-3 text-lg tracking-widest font-barlow">
+                        PAGES
+                    </h3>
                     <ul className="text-sm font-thin space-y-2">
                         {pagesLink.map((link) => (
-                            <li key={link._id} className="cursor-pointer">
+                            <li
+                                key={link._id}
+                                className="cursor-pointer font-barlow-200"
+                            >
                                 <Link
                                     to={link.target}
                                     spy={true}
@@ -41,37 +46,43 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="flex flex-col items-center mt-10 md:mb-5 md:grid md:place-items-start">
-                    <h3 className="mb-3 text-lg tracking-widest">
+                    <h3 className="mb-3 text-lg tracking-widest font-barlow">
                         USEFUL LINKS
                     </h3>
-                    <ul className="text-sm font-thin space-y-2">
+                    <ul className="text-sm font-thin font-barlow-200 space-y-2">
                         {usefulLinks.map((link) => (
                             <li key={link._id}>
-                                <a href=''>{link.title}</a>
+                                <a href="">{link.title}</a>
                             </li>
                         ))}
                     </ul>
                 </div>
                 <div className="flex flex-col items-center mt-10 md:mb-5 md:grid md:place-items-start">
-                    <h3 className="mb-3 text-lg tracking-widest">CONTACTS</h3>
+                    <h3 className="mb-3 text-lg tracking-widest font-barlow">
+                        CONTACTS
+                    </h3>
                     <ul className="text-sm font-thin space-y-2">
-                        <li className="flex items-center gap-2">
+                        <li className="flex items-center gap-2 font-barlow-200">
                             <AiOutlineMail size={22} />
                             studio@elinorinteriors.com
                         </li>
-                        <li className="flex items-center gap-2">
+                        <li className="flex items-center gap-2 font-barlow-200">
                             <LiaPhoneSolid size={22} />
                             0881122345 / Sofia, Bulgaria
                         </li>
-                        <li className="flex items-center gap-2">
+                        <li className="flex items-center gap-2 font-barlow-200">
                             <LiaPhoneSolid size={22} />
                             0881122345 / New York, USA
                         </li>
                     </ul>
                 </div>
                 <div className="flex flex-col items-center mt-10 md:mb-5 md:grid md:place-items-start">
-                    <h3 className="mb-3 text-lg tracking-widest">NEWSLETTER</h3>
-                    <label className="text-sm font-thin">Email address</label>
+                    <h3 className="mb-3 text-lg tracking-widest font-barlow">
+                        NEWSLETTER
+                    </h3>
+                    <label className="text-sm font-thin font-barlow-200">
+                        Email address
+                    </label>
                     <input
                         className="border w-[100%] h-[40px] md:h-[35px] border-black mt-2 px-3"
                         type="email"

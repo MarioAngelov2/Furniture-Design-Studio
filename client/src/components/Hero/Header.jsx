@@ -16,7 +16,7 @@ function Header() {
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-playfair">
                     Redefining Luxury in Interior Design
                 </h1>
-                <p className="text-sm mt-2 md:text-lg">
+                <p className="text-sm mt-2 md:text-lg font-barlow">
                     Shaping the essence of living into precisely crafted spaces{" "}
                     <br />
                     where one can grow, breathe, connect, and adore.

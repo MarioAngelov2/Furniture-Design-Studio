@@ -24,13 +24,15 @@ function Projects() {
                 id="portfolio"
                 className="md:flex justify-between max-w-[1440px] mx-auto items-center px-12 mt-20 md:mb-8"
             >
-                <h1 className="mb-2 text-3xl md:text-3xl">Latest Projects</h1>
-                <button className="underline underline-offset-8 text-xs md:text-base tracking-widest">
+                <h1 className="mb-2 text-3xl md:text-3xl font-playfair">
+                    Latest Projects
+                </h1>
+                <button className="underline underline-offset-8 text-xs md:text-base tracking-widest font-barlow">
                     SEE PORTFOLIO
                 </button>
             </div>
             <div className="md:grid grid-cols-2 max-w-[1440px] mx-auto text-center mt-10">
-                <ListProjects projects={projects}/>
+                <ListProjects projects={projects} />
             </div>
         </>
     );

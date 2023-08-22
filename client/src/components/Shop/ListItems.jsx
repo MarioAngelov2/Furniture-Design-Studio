@@ -9,9 +9,9 @@ function ListItems({ products }) {
                         <div className="border border-y-8 border-x-8 border-[#F6F4F1]">
                             <img src={product.images} alt="" />
                         </div>
-                        <div className="flex mt-5 justify-between items-center">
+                        <div className="flex mt-5 justify-between items-center font-playfair">
                             <h2>{product.title}</h2>
-                            <button className="underline underline-offset-8 tracking-widest">
+                            <button className="underline underline-offset-8 tracking-widest font-barlow">
                                 SHOP
                             </button>
                         </div>

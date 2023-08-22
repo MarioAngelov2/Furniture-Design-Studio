@@ -28,13 +28,13 @@ function ListPosts({ blogPost }) {
                                         {formattedDate} &bull; {post.readTime}{" "}
                                         min read
                                     </p>
-                                    <h2 className="text-2xl text-start mt-1">
+                                    <h2 className="text-2xl text-start mt-1 font-playfair">
                                         {post.title}
                                     </h2>
-                                    <p className="text-start text-md mt-2">
+                                    <p className="text-start text-md mt-2 font-barlow">
                                         {post.article}
                                     </p>
-                                    <button className="flex md:w-[20%] mb-10 mt-6 underline underline-offset-8 tracking-widest">
+                                    <button className="flex md:w-[20%] mb-10 mt-6 underline underline-offset-8 tracking-widest font-barlow">
                                         READ MORE
                                     </button>
                                 </div>

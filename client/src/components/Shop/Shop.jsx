@@ -24,10 +24,10 @@ function Shop() {
             className="md:grid grid-cols-1 max-w-[1440px] mx-auto text-center mt-20"
         >
             <div className="md:flex justify-between items-center px-12 mb-8">
-                <h1 className="text-3xl mb-3 md:text-3xl">
+                <h1 className="text-3xl mb-3 md:text-4xl font-playfair">
                     Shop our favorites
                 </h1>
-                <button className="underline underline-offset-8 text-md tracking-widest">
+                <button className="underline underline-offset-8 text-md tracking-widest font-barlow">
                     SHOP ALL
                 </button>
             </div>
