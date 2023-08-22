@@ -1,6 +1,3 @@
-import { AiOutlineMail } from "react-icons/ai";
-import { LiaPhoneSolid } from "react-icons/lia";
-
 export const pagesLink = [
     {
         title: "Services",
