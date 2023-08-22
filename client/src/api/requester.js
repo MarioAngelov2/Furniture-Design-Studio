@@ -1,4 +1,4 @@
-const URL = "https://64e4d21e1bb85e1c5b669a8f--exquisite-choux-2a199d.netlify.app/";
+const URL = "https://furniture-design-stuio.onrender.com";
 
 async function handleResponse(response) {
     if (!response.ok) {
