@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import * as requester from "../../api/requester";
-
-const URL = "http://localhost:4002/products";
+import ListItems from "./ListItems";
 
 function Shop() {
     const [products, setProducts] = useState([]);
@@ -17,21 +16,7 @@ function Shop() {
 
     useEffect(() => {
         loadProducts();
-    }, [])
-
-    const listProducts = products.length > 0 && products.map((product) => (
-        <div key={product._id}>
-            <div className="border border-y-8 border-x-8 border-[#F6F4F1]">
-                <img src={product.images} alt="" />
-            </div>
-            <div className="flex mt-5 justify-between items-center">
-                <h2>{product.title}</h2>
-                <button className="underline underline-offset-8 tracking-widest">
-                    SHOP
-                </button>
-            </div>
-        </div>
-    ));
+    }, []);
 
     return (
         <div
@@ -48,7 +33,7 @@ function Shop() {
             </div>
             <div className="md:flex justify-center">
                 <div className="flex flex-col gap-14 md:flex md:flex-row md:gap-24 px-12">
-                    {listProducts}
+                    <ListItems products={products} />
                 </div>
             </div>
         </div>
