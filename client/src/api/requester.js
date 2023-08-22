@@ -1,4 +1,4 @@
-const URL = "http://localhost:4002";
+const URL = "https://main--exquisite-choux-2a199d.netlify.app/";
 
 async function handleResponse(response) {
     if (!response.ok) {
