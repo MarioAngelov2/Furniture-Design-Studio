@@ -2,7 +2,6 @@ const { Router } = require("express");
 const getProducts = require("../controllers/getProducts");
 const getProjects = require("../controllers/getProjects");
 const getBlogPosts = require("../controllers/getBlogPosts");
-const insertSampleData = require("../controllers/insertSampleData");
 
 const router = Router();
 
