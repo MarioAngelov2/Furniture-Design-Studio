@@ -1,6 +1,6 @@
 require("dotenv").config();
 const express = require("express");
-const cors = require('cors')
+const cors = require("cors");
 const { default: mongoose } = require("mongoose");
 const router = require("./src/routes/routes");
 
@@ -8,9 +8,17 @@ const app = express();
 
 mongoose.connect(process.env.MONGO_CONNECTION_STRING);
 
-app.use(cors({
-    origin: "https://verdant-pothos-9cdb4c.netlify.app"
-}))
+console.log(process.env.NODE_ENV)
+
+if (process.env.NODE_ENV === "development") {
+    app.use(cors());
+} else {
+    app.use(
+        cors({
+            origin: "https://verdant-pothos-9cdb4c.netlify.app",
+        })
+    );
+}
 
 app.use("/", router);
 
