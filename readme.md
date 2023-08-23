@@ -10,7 +10,7 @@ Welcome to Furniture Design Studio documentation. This document provides an over
 3. Folder Structure
 4. Deployment
 
-## Front-end
+## Getting started
 
 `Clone repo`
 
