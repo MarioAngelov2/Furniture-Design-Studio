@@ -1,12 +1,16 @@
 require("dotenv").config();
 const express = require("express");
-const cors = require("cors");
+const cors = require('cors')
 const { default: mongoose } = require("mongoose");
 const router = require("./src/routes/routes");
 
 const app = express();
 
 mongoose.connect(process.env.MONGO_CONNECTION_STRING);
+
+app.use(cors({
+    origin: "https://furniture-design-stuio.onrender.com"
+}))
 
 app.use("/", router);
 
