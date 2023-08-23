@@ -39,41 +39,41 @@ Welcome to Furniture Design Studio documentation. This document provides an over
 ## Folder Structure
 
 ### Frontend
-`src/`
+- `src/`
 The `src/` directory is the heart of the app. housing all the source code.
 
-`assets/`
+- `assets/`
 In the `assets/` directory, you'll find static assets like images and logos, which are used across various parts of the app.
 
-`components/`
+- `components/`
 The `components/` directory holds reusable UI components. There components can be utilized in different sections of the app, pomoting code reusability and consistency.
 
-`api/`
+- `api/`
 The `api/` directory holds all the logic for fetching data from the server. It's separate folder from the UI components in order to keep separation of concerns and clean code.
 
-`utils/`
+- `utils/`
 In the `utils/` folder are located utility functions and helper modules. Theese utillities encompass functionality such as data manipulation and other common.  
 
 ### Backend
-`index.js`
+- `index.js`
 The `index.js` file is where the server is initialised and started.
 
-`src/`
+- `src/`
 The `src/` directory is the main folder which contains all the backend functionlity.
 
-`controllers/`
+- `controllers/`
 Inside `controllers/` is where the business logic of the application is located. It contains different requests methods. 
 
-`routes/`
+- `routes/`
 The `routes/` folder is responsible to keep one route file which contains imported controllers and handling request for each controller.
 
-`models/`
+- `models/`
 Inside `models/` folder is located the schema and models for our database. It's esential part of the application because we can structure how the information will look like via those schemas. 
 
 
 ## Deployment
-The `Frontend` is build with `Vite` and deployed on `Netlify`
-The `Backend` is build and deployed via `Render`
+- The `Frontend` is build with `Vite` and deployed on `Netlify`
+- The `Backend` is build and deployed via `Render`
 
 ## Screenshots 
 
