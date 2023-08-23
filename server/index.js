@@ -9,7 +9,7 @@ const app = express();
 mongoose.connect(process.env.MONGO_CONNECTION_STRING);
 
 app.use(cors({
-    origin: "https://furniture-design-stuio.onrender.com"
+    origin: "https://verdant-pothos-9cdb4c.netlify.app"
 }))
 
 app.use("/", router);
