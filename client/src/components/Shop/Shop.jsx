@@ -21,7 +21,7 @@ function Shop() {
     return (
         <div
             id="shop"
-            className="md:grid grid-cols-1 max-w-[1440px] mx-auto text-center mt-20"
+            className="md:grid grid-cols-1 max-w-[1440px] mx-auto text-center mt-28"
         >
             <div className="md:flex justify-between items-center px-12 mb-8">
                 <h1 className="text-3xl mb-3 md:text-4xl font-playfair">

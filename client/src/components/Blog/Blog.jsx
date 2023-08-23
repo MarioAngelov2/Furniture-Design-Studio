@@ -22,7 +22,7 @@ function Blog() {
         <>
             <div
                 id="blog"
-                className="flex flex-col md:flex md:flex-row max-w-[1440px] mx-auto justify-between items-center px-12 mt-20 mb-8"
+                className="flex flex-col md:flex md:flex-row max-w-[1440px] mx-auto justify-between items-center px-12 mt-28 mb-8"
             >
                 <h1 className="text-3xl mb-3 md:text-4xl font-playfair">
                     Check out our blog
