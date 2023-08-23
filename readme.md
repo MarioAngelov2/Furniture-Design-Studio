@@ -2,16 +2,14 @@
 
 ## Live Demo - https://64e4d78e030f9c211df063c7--verdant-pothos-9cdb4c.netlify.app/
 
-## Introduction
-
-1. Introduction 
-2. Getting started
-3. Technology Stack
-4. Folder Structure
-5. Deployment
-
-## Introduction
 Welcome to Furniture Design Studio documentation. This document provides an overview of the app's functionality and technology stack.
+
+## Introduction
+
+1. Getting started
+2. Technology Stack
+3. Folder Structure
+4. Deployment
 
 ## Front-end
 
