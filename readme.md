@@ -35,6 +35,7 @@ Welcome to Furniture Design Studio documentation. This document provides an over
 - `Express`
 - `Http-Errors`
 - `Mongoose`
+- `Cors`
 
 ## Folder Structure
 
