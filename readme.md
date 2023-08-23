@@ -1,7 +1,7 @@
 # Furniture Design Studio - Documentation
 Welcome to Furniture Design Studio documentation. This document provides an overview of the app's functionality and technology stack.
 
-## Live Demo - 
+## Live Demo - https://verdant-pothos-9cdb4c.netlify.app/
 
 ## Introduction
 
