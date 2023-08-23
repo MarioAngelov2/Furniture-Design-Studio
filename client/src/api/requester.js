@@ -1,4 +1,7 @@
-const URL = "https://furniture-design-stuio.onrender.com";
+const URL =
+    process.env.NODE_ENV === "development"
+        ? "http://localhost:4002"
+        : "https://furniture-design-stuio.onrender.com";
 
 async function handleResponse(response) {
     if (!response.ok) {
